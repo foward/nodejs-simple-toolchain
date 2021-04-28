@@ -25,6 +25,7 @@ var appEnv = cfenv.getAppEnv();
 // start server on the specified port and binding host
 app.listen(appEnv.port, '0.0.0.0', function() {
 
+	console.log(process.env.NODE_ENV)
 	// print a message when the server starts listening
   console.log(message.getWelcomeMessage() + appEnv.url);
 });
